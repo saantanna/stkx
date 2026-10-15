@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/stkx-logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<title>Solicitar orçamento — STKX SaaS</title>
+<meta name="description" content="Conte à STKX sobre o seu projeto e solicite um orçamento.">
+</head>
+<body>
+<header class="hdr"><div class="wrap">
+<a class="brand" href="index.html" aria-label="STKX SaaS — início"><img src="assets/stkx-logo.png" alt="STKX" width="98" height="44"></a>
+<button class="menu-btn" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+<nav class="nav" aria-label="Principal">
+<a href="index.html">Início</a>
+<a href="index.html#solutions">Soluções</a>
+<a class="btn sm" href="project-inquiry.html" aria-current="page">Iniciar projeto</a>
+</nav></div></header>
+<main class="page"><div class="wrap page-grid">
+<aside class="side">
+<h1>Conte sobre o seu projeto.</h1>
+<p class="intro">Envie o essencial. Quanto mais detalhes, mais útil será a nossa primeira resposta.</p>
+<ol class="next"><li><b>Você envia o pedido</b>Leva cerca de três minutos.</li><li><b>Analisamos</b>Lemos cada detalhe e avaliamos o que é necessário.</li><li><b>Respondemos com os próximos passos</b>Uma proposta ou algumas perguntas para esclarecer.</li></ol>
+</aside>
+<div id="box">
+<form id="inq" novalidate autocomplete="on">
+<div class="hp" aria-hidden="true"><label for="website">Não preencha este campo</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+<div class="f"><label for="name">Nome completo</label><input id="name" name="name" type="text" placeholder="Seu nome" required minlength="2" maxlength="100" autocomplete="name"><span class="msg"></span></div>
+<div class="f"><label for="email">E-mail</label><input id="email" name="email" type="email" placeholder="voce@empresa.com" required maxlength="254" autocomplete="email"><span class="msg"></span></div>
+<div class="f"><label for="company">Empresa ou marca <span>(opcional)</span></label><input id="company" name="company" type="text" placeholder="Onde você trabalha" maxlength="100" autocomplete="organization"><span class="msg"></span></div>
+<div class="f"><label for="contact">Telefone ou WhatsApp <span>(opcional)</span></label><input id="contact" name="contact" type="tel" placeholder="Melhor número para contato" maxlength="30" pattern="[0-9 ()+.\-]{6,30}" autocomplete="tel"><span class="msg"></span></div>
+<fieldset><legend>O que você precisa?</legend><div class="chips"><input type="radio" name="type" id="t0" value="site" required><label for="t0">Site ou landing page</label><input type="radio" name="type" id="t1" value="saas"><label for="t1">Sistema web ou SaaS</label><input type="radio" name="type" id="t2" value="automacao"><label for="t2">Automação</label><input type="radio" name="type" id="t3" value="ecommerce"><label for="t3">E-commerce</label><input type="radio" name="type" id="t4" value="outro"><label for="t4">Outro tipo de projeto</label></div><span class="msg" id="typeMsg">Escolha uma opção.</span></fieldset>
+<div class="f"><label for="budget">Faixa de orçamento <span>(opcional)</span></label><select id="budget" name="budget"><option value="">Ainda não definido</option><option value="ate3k">Até R$ 3.000</option><option value="3k-10k">R$ 3.000 – 10.000</option><option value="10k-30k">R$ 10.000 – 30.000</option><option value="30k+">Acima de R$ 30.000</option></select></div>
+<div class="f"><label for="deadline">Prazo desejado <span>(opcional)</span></label><select id="deadline" name="deadline"><option value="">Flexível</option><option value="2sem">Em até 2 semanas</option><option value="1mes">Em até 1 mês</option><option value="1-3meses">De 1 a 3 meses</option></select></div>
+<div class="f full"><label for="details">Descreva o seu projeto</label><textarea id="details" name="details" required minlength="20" maxlength="3000" placeholder="Que problema ele deve resolver? Quem vai usar? Tem referências?"></textarea><span class="msg"></span></div>
+<div class="f full consent"><input type="checkbox" id="consent" name="consent" required><label for="consent">Li e concordo com a <a href="privacidade.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a> e com os <a href="termos.html" target="_blank" rel="noopener noreferrer">Termos de Uso</a>.</label><span class="msg"></span></div>
+<p class="form-err" id="formErr" role="alert" hidden></p>
+<div class="actions"><button class="btn" id="send" type="submit">Enviar pedido <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button><small>Usamos essas informações apenas para responder ao seu pedido.</small></div>
+</form>
+<div class="done" role="status" tabindex="-1"><h2>Pedido recebido.</h2><p>Obrigado, <b id="who"></b>. Vamos analisar o seu projeto e responder no e-mail informado.</p><a class="btn ghost" href="index.html">Voltar ao início</a></div>
+</div></div></main>
+<footer class="ftr"><div class="wrap">
+<a href="index.html" aria-label="STKX SaaS"><img src="assets/stkx-logo.png" alt="STKX" width="116" height="52"></a>
+<nav aria-label="Rodapé"><a href="index.html#solutions">Soluções</a><a href="project-inquiry.html">Solicitar projeto</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos de uso</a><a data-ig-link href="https://www.instagram.com/stanna.dev/" target="_blank" rel="noopener noreferrer"><span data-ig>@sntanna_dev</span></a></nav>
+<a class="btn sm ghost" data-wa-link href="https://wa.me/5587991310726" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+<small>© <span data-year></span> STKX SaaS. Todos os direitos reservados.</small>
+</div></footer>
+<script src="config.js"></script><script src="site.js"></script><script src="inquiry.js"></script>
+</body></html>

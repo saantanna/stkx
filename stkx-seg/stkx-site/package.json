@@ -1,0 +1,12 @@
+{
+  "name": "stkx-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site STKX SaaS com formulário de orçamento, banco SQLite e painel com notificações",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "create-admin": "node create-admin.js"
+  },
+  "engines": { "node": ">=22.13.0" }
+}
